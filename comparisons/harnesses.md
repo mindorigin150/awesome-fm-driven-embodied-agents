@@ -8,12 +8,12 @@
 
 | Project | Foundation model's role | Action interface | Feedback and improvement |
 | --- | --- | --- | --- |
-| [Embodied Harness](../README.md#embodied-harness) | Calls semantic perception and robot tools | Observation, object localization, proprioception, and grasp tools backed by replaceable providers | Tool outcomes and durable session events; recorded fixtures and live execution are distinct modes |
+| [SenseNova-RoboRSI](../README.md#sensenova-roborsi) | Uses configured prompts, context, skills, and tools in a shared runtime | VLA skills, scripted actions, or end-effector tools | Traces and task feedback guide harness revisions; candidates are retested with model parameters fixed in the harness-improvement workflow |
 | [ORA](../README.md#ora) | Chooses perception and motion tools using task and robot context | Grasp proposals and motion planning, checked by a supervisor; no VLA in the reported setup | Observations and action receipts return to the agent; requests and actions are recorded |
 | [RoboRSI](../README.md#roborsi) | Splits task management, planning, execution, and review across agents | Executable plans and hierarchical robot skills | Reviewer diagnoses failures; proposed skill changes undergo regression checks before retention |
-| [RPent](../README.md#rpent) | Plans and steers execution using memory | VLA manipulation primitives through robot services | Interaction and reflection support memory-guided execution; exploration can produce task memory |
-| [SenseNova-RoboRSI](../README.md#sensenova-roborsi) | Uses configured prompts, context, skills, and tools in a shared runtime | VLA skills, scripted actions, or end-effector tools | Traces and task feedback guide harness revisions; candidates are retested with model parameters fixed in the harness-improvement workflow |
 | [Show-Harness](../README.md#show-harness) | Selects semantic action units from visual observations | Discrete actions translated by an interpreter for each robot | Plugins provide action history and failure recovery; demonstration fine-tuning is a separate operating mode |
+| [Embodied Harness](../README.md#embodied-harness) | Calls semantic perception and robot tools | Observation, object localization, proprioception, and grasp tools backed by replaceable providers | Tool outcomes and durable session events; recorded fixtures and live execution are distinct modes |
+| [RPent](../README.md#rpent) | Plans and steers execution using memory | VLA manipulation primitives through robot services | Interaction and reflection support memory-guided execution; exploration can produce task memory |
 
 Capability descriptions do not imply that every backend or experiment is publicly released. For example, SenseNova-RoboRSI's [BenchZoo table](https://github.com/OpenSenseNova/SenseNova-RoboRSI#benchzoo) distinguishes released integrations from planned ones.
 
@@ -42,3 +42,18 @@ Turns robot benchmarks into tasks that agent harnesses solve through the `robo` 
 - **Sources:** [Documentation](https://robouse.ai/docs/) · [Published runs](https://robouse.ai/runs).
 
 When comparing results, check the model, task set, observation access, action interface, and execution budget. Also check retries, persistent memory, human assistance, and whether the system learns during evaluation. Follow the linked protocols for each result.
+
+## Entry Dates
+
+Entries use the arXiv v1 submission date when a paper exists. Otherwise, they use the first official release or launch record below. Dates were checked on 2026-10-20.
+
+| Project | Date | Source |
+| --- | --- | --- |
+| SenseNova-RoboRSI | 2026-10-16 | [Initial code release announcement](https://github.com/OpenSenseNova/SenseNova-RoboRSI#news) |
+| ORA | 2026-10-15 | [Release announcement](https://github.com/hao-ai-lab/ORA#news) |
+| RoboRSI | 2026-10-08 | [arXiv v1 submission history](https://arxiv.org/abs/2610.12424) |
+| Show-Harness | 2026-09-09 | [arXiv v1 submission history](https://arxiv.org/abs/2609.10522) |
+| Embodied Harness | 2026-08-24 | [Author's launch post](https://yanming03.github.io/content/blogs/embodied-harness/) |
+| RPent | 2026-07-09 | [Harness VLA arXiv v1 submission history](https://arxiv.org/abs/2607.08448) |
+| Embodied First Exam | 2026-10-19 | [Release announcement](https://github.com/mll-lab-nu/embodied-first-exam#news) |
+| Robo Use | 2026-09-21 | [First PyPI release, 0.0.1](https://pypi.org/project/robouse/0.0.1/) |

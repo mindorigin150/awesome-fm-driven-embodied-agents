@@ -12,13 +12,17 @@ Standalone models, datasets, and general simulators belong in supporting links w
 
 ## README format
 
-Keep the homepage concise: one bullet per project, with its name, a short title or description, and linked badges. Use the same format in both sections.
+Keep the homepage concise: one bullet per project, with its date, name, a short title or description, and linked badges. Use the same format in both sections.
 
 ```markdown
-- <a id="project-name"></a>**Project Name**: Short title or description. [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](OFFICIAL_REPOSITORY_URL)
+- <a id="project-name"></a>`YYYY-MM-DD` **Project Name**: Short title or description. [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](OFFICIAL_REPOSITORY_URL)
 ```
 
-- Sort entries alphabetically within each section.
+- Sort entries by date within each section, newest first.
+- Use the arXiv v1 submission date when a paper exists. Otherwise, use the first official project or package release date.
+- Record the date source in the [comparison notes](comparisons/harnesses.md#entry-dates). Use an official launch post when there is no release record.
+- Do not use repository creation, recent commits, paper revisions, or the date added to this list.
+- Keep the existing order for entries with the same date. If a date cannot be verified, place the entry last with `Undated`.
 - Preserve existing anchors so other documents can link to entries.
 - Use green `Code | GitHub`, red `arXiv | PAPER_ID`, and blue `Website | Project` or `Docs | Guide` badges.
 - Add badges only for resources that exist. A paper is optional.
@@ -42,7 +46,7 @@ Create a topic note when there is a concrete comparison to explain. Link to the 
 
 ## Before submitting
 
-1. Check the scope, source support, and alphabetical order.
+1. Check the scope, source support, and descending date order.
 2. Check badge images, link destinations, and unique anchors.
 3. Preview the README on GitHub.
 
