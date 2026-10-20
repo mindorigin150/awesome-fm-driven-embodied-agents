@@ -10,6 +10,7 @@ A curated list of foundation-model-driven embodied agents, starting with harness
 - <a id="show-harness"></a>`2026-09-09` **Show-Harness**: Just a VLM Agent Can Play Robots. [![arXiv: 2609.10522](https://img.shields.io/badge/arXiv-2609.10522-b31b1b?style=flat-square)](https://arxiv.org/abs/2609.10522) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](https://github.com/showlab/Show-Harness)
 - <a id="embodied-harness"></a>`2026-08-24` **Embodied Harness**: Semantic robot tools built on DeepSeek Harness. [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](https://github.com/imakiyui/embodied-harness)
 - <a id="rpent"></a>`2026-07-09` **RPent**: Agentic Infrastructure for the Physical World. [![arXiv: 2607.08448](https://img.shields.io/badge/arXiv-2607.08448-b31b1b?style=flat-square)](https://arxiv.org/abs/2607.08448) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](https://github.com/RLinf/RPent)
+- <a id="aspire"></a>`2026-06-30` **ASPIRE**: Agentic /Skills Discovery for Robotics. [![arXiv: 2607.00272](https://img.shields.io/badge/arXiv-2607.00272-b31b1b?style=flat-square)](https://arxiv.org/abs/2607.00272) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](https://github.com/NVlabs/ASPIRE)
 
 ## Evaluation & Environments
 
