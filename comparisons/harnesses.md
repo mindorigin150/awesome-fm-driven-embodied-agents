@@ -9,12 +9,15 @@
 | Project | Foundation model's role | Action interface | Feedback and improvement |
 | --- | --- | --- | --- |
 | [SenseNova-RoboRSI](../README.md#sensenova-roborsi) | Uses configured prompts, context, skills, and tools in a shared runtime | VLA skills, scripted actions, or end-effector tools | Traces and task feedback guide harness revisions; candidates are retested with model parameters fixed in the harness-improvement workflow |
+| [HexaShell](../README.md#hexashell) | A VLM coding agent controls the robot; a second agent diagnoses failures and repairs tools | The `robo` command and Python tools use RGB images, camera calibration, and arm state | Failed episodes guide tool edits and retries; tools are frozen for evaluation |
 | [ORA](../README.md#ora) | Chooses perception and motion tools using task and robot context | Grasp proposals and motion planning, checked by a supervisor; no VLA in the reported setup | Observations and action receipts return to the agent; requests and actions are recorded |
 | [RoboRSI](../README.md#roborsi) | Splits task management, planning, execution, and review across agents | Executable plans and hierarchical robot skills | Reviewer diagnoses failures; proposed skill changes undergo regression checks before retention |
 | [Show-Harness](../README.md#show-harness) | Selects semantic action units from visual observations | Discrete actions translated by an interpreter for each robot | Plugins provide action history and failure recovery; demonstration fine-tuning is a separate operating mode |
 | [Embodied Harness](../README.md#embodied-harness) | Calls semantic perception and robot tools | Observation, object localization, proprioception, and grasp tools backed by replaceable providers | Tool outcomes and durable session events; recorded fixtures and live execution are distinct modes |
 | [RPent](../README.md#rpent) | Plans and steers execution using memory | VLA manipulation primitives through robot services | Interaction and reflection support memory-guided execution; exploration can produce task memory |
 | [ASPIRE](../README.md#aspire) | Writes and refines robot control programs through a coding agent | Executable programs call perception, planning, grasping, and control primitives | Multimodal execution traces support failure diagnosis, repair, and validation; validated fixes become reusable skills, with evolutionary search over programs |
+
+HexaShell's [paper](https://arxiv.org/abs/2610.23479) describes the acting and optimizer agents. Its [repository](https://github.com/HexaFuture/HexaShell) releases frozen tools, interfaces, and evaluation results. The full harness and evolution loop are not included. Sources checked: 2026-10-21.
 
 ASPIRE's [official method description](https://research.nvidia.com/labs/gear/aspire/#method) documents its execution engine, skill library, and evolutionary search. Source checked: 2026-10-20.
 
@@ -53,6 +56,7 @@ Entries use the arXiv v1 submission date when a paper exists. Otherwise, they us
 | Project | Date | Source |
 | --- | --- | --- |
 | SenseNova-RoboRSI | 2026-10-16 | [Initial code release announcement](https://github.com/OpenSenseNova/SenseNova-RoboRSI#news) |
+| HexaShell | 2026-10-16 | [arXiv v1 submission history](https://arxiv.org/abs/2610.23479), checked 2026-10-21 |
 | ORA | 2026-10-15 | [Release announcement](https://github.com/hao-ai-lab/ORA#news) |
 | RoboRSI | 2026-10-08 | [arXiv v1 submission history](https://arxiv.org/abs/2610.12424) |
 | Show-Harness | 2026-09-09 | [arXiv v1 submission history](https://arxiv.org/abs/2609.10522) |
