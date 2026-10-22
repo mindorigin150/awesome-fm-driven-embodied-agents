@@ -8,6 +8,7 @@
 
 | Project | Foundation model's role | Action interface | Feedback and improvement |
 | --- | --- | --- | --- |
+| [Open Gemini Robot Harness](../README.md#open-gemini-robot-harness) | Gemini plans from calibrated images with coordinate overlays and measured arm state | Restricted skill programs call per-arm primitives and parallel actions. The execution layer converts coordinates and solves inverse kinematics | Human review or `gap_guard` checks each motion segment. Rejection reasons and fresh observations support replanning. Holding checks support handover verification |
 | [SenseNova-RoboRSI](../README.md#sensenova-roborsi) | Uses configured prompts, context, skills, and tools in a shared runtime | VLA skills, scripted actions, or end-effector tools | Traces and task feedback guide harness revisions; candidates are retested with model parameters fixed in the harness-improvement workflow |
 | [HexaShell](../README.md#hexashell) | A VLM coding agent controls the robot; a second agent diagnoses failures and repairs tools | The `robo` command and Python tools use RGB images, camera calibration, and arm state | Failed episodes guide tool edits and retries; tools are frozen for evaluation |
 | [ORA](../README.md#ora) | Chooses perception and motion tools using task and robot context | Grasp proposals and motion planning, checked by a supervisor; no VLA in the reported setup | Observations and action receipts return to the agent; requests and actions are recorded |
@@ -16,6 +17,8 @@
 | [Embodied Harness](../README.md#embodied-harness) | Calls semantic perception and robot tools | Observation, object localization, proprioception, and grasp tools backed by replaceable providers | Tool outcomes and durable session events; recorded fixtures and live execution are distinct modes |
 | [RPent](../README.md#rpent) | Plans and steers execution using memory | VLA manipulation primitives through robot services | Interaction and reflection support memory-guided execution; exploration can produce task memory |
 | [ASPIRE](../README.md#aspire) | Writes and refines robot control programs through a coding agent | Executable programs call perception, planning, grasping, and control primitives | Multimodal execution traces support failure diagnosis, repair, and validation; validated fixes become reusable skills, with evolutionary search over programs |
+
+Open Gemini Robot Harness is a third-party implementation of Google's published harness design, extended to two arms. Its [repository](https://github.com/ehehee/open-gemini-robot-harness) documents human approval of each motion segment in all recorded real-robot case-study runs. The automatic checker is validated in simulation and scripted checks. Recorded real-robot validation remains future work. The [author's case study](https://ehehee.github.io/blog/open-gemini-harness/) reports development runs with changing prompts and harnesses, rather than a controlled success-rate benchmark. Sources checked: 2026-10-23.
 
 HexaShell's [paper](https://arxiv.org/abs/2610.23479) describes the acting and optimizer agents. Its [repository](https://github.com/HexaFuture/HexaShell) releases frozen tools, interfaces, and evaluation results. The full harness and evolution loop are not included. Sources checked: 2026-10-21.
 
@@ -55,6 +58,7 @@ Entries use the arXiv v1 submission date when a paper exists. Otherwise, they us
 
 | Project | Date | Source |
 | --- | --- | --- |
+| Open Gemini Robot Harness | 2026-10-20 | [Author's launch post](https://ehehee.github.io/blog/open-gemini-harness/), checked 2026-10-23 |
 | SenseNova-RoboRSI | 2026-10-16 | [Initial code release announcement](https://github.com/OpenSenseNova/SenseNova-RoboRSI#news) |
 | HexaShell | 2026-10-16 | [arXiv v1 submission history](https://arxiv.org/abs/2610.23479), checked 2026-10-21 |
 | ORA | 2026-10-15 | [Release announcement](https://github.com/hao-ai-lab/ORA#news) |

@@ -4,6 +4,7 @@ A curated list of foundation-model-driven embodied agents, starting with harness
 
 ## Agent Harnesses
 
+- <a id="open-gemini-robot-harness"></a>`2026-10-20` **Open Gemini Robot Harness**: Bimanual robot harness with calibrated visual observations, skill programs, and motion checking. [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](https://github.com/ehehee/open-gemini-robot-harness) [![Website: Project](https://img.shields.io/badge/Website-Project-007ec6?style=flat-square)](https://ehehee.github.io/blog/open-gemini-harness/)
 - <a id="sensenova-roborsi"></a>`2026-10-16` **SenseNova-RoboRSI**: Recursive Self-Improvement for Embodied Agents. [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](https://github.com/OpenSenseNova/SenseNova-RoboRSI)
 - <a id="hexashell"></a>`2026-10-16` **HexaShell**: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents. [![arXiv: 2610.23479](https://img.shields.io/badge/arXiv-2610.23479-b31b1b?style=flat-square)](https://arxiv.org/abs/2610.23479) [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](https://github.com/HexaFuture/HexaShell)
 - <a id="ora"></a>`2026-10-15` **ORA**: Open Robot-Use Agents. [![Code: GitHub](https://img.shields.io/badge/Code-GitHub-2ea44f?style=flat-square)](https://github.com/hao-ai-lab/ORA) [![Website: Blog](https://img.shields.io/badge/Website-Blog-007ec6?style=flat-square)](https://haoailab.com/blogs/ora/)
